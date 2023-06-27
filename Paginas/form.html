@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="shortcut icon" href="../Imagens/icons8-old-vmware-logo-50.png" type="image/x-icon">
+    <script type="text/javascript" src="../JS/programacao.js"></script>
+    <link rel="stylesheet" href="../Estilos/style.css">
+    <link rel="stylesheet" href="../Estilos/Formulário/form.css">
+
+</head>
+<body>
+      <!--Estrutura HTML-->
+    <header>
+        <div class="header-bg">
+            <h1 class="titulo">Linguagem de Programação </h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Liguem de programação</a>
+                    <div class="dropdown-content">
+                        <a href="c.html">Linguagem de programação em C</a>
+                        <a href="c++.html">Linguagem de programação em C++</a>
+                        <a href="php.htm">Linguagem de programação em PHP</a>
+                        <a href="python.html">Linguagem de programação em Python</a>
+                    </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Linguagem de marcação e estilização</a>
+                    <div class="dropdown-content">
+                        <a href="html.html">HTML</a>
+                        <a href="css.htm">CSS</a>
+                    </div>
+            </li>
+            <li><a href="form.html">Cadastre-se </a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Preencha o formulário abaixo para receber gratuitamente o conteúdo sobre a programação.</h1>
+        <p>Gostaria de receber conteúdo gratuito sobre programação das principais linguagens de programação? Preencha o formulário abaixo:</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+          
+            <br>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <br>
+          
+            <label for="celular">Celular:</label>
+            <input type="tel" id="celular" name="celular" required>
+          
+            <br>
+          
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required>
+          
+            <br>
+          
+            <label for="confirmacao">Gostaria de receber a confirmação por e-mail?</label>
+            <input type="radio" id="sim" name="confirmacao" value="sim" required>
+            <label class="tipo" for="sim">Sim</label>
+            <input type="radio" id="nao" name="confirmacao" value="nao">
+            <label class="tipo" for="nao">Não</label>
+          
+            <br>
+          
+            <button type="submit" id="submit-btn" onclick="cadastro()">Enviar</button>
+            <button type="reset" id="clear-btn">Limpar Dados</button>
+        </form>
+
+        <h3>Confimação de Dados:</h3>
+        Nome: <p id="respnome"></p>
+        E-mail: <p id="respemail"></p>
+        Celular: <p id="respcell"></p>
+        Idade: <p id="respidade"></p>
+
+        <p>Receba dicas, tutoriais e atualizações sobre Python, JavaScript, C++, Java e muito mais. Aprimore suas habilidades de programação com nosso conteúdo exclusivo.</p>
+
+   
+    </main>
+
+
+    <footer>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../Imagens/Footer_logo_rede_social/facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="../Imagens/Footer_logo_rede_social/instagram.png" alt="instagram"></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="../Imagens/Footer_logo_rede_social/linkedin.png" alt="linkedin"></a>
+        <a href="https://www.youtube.com/" target="_blank"><img src="../Imagens/Footer_logo_rede_social/youtube.png" alt="YouTube"></a>            
+       <p> © 2023 - Todos os direitos reservados. Eduardo Souza.</p>
+    </footer>
+
+
+</body>
+</html>

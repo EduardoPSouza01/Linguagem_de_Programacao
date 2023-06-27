@@ -1,0 +1,129 @@
+/*  Estilização do Corpo Principal do Site*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+header {
+  position: relative;
+}
+
+.header-bg {
+  
+  background-image: url('../Imagens/header.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  height: 40vh; 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.titulo {
+  color: #fff; 
+  font-size: 50px; /* Define o tamanho da fonte do título */
+ 
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 15px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1a1919;
+  display: flex; /* Adicionado para centralizar */
+  justify-content: center; /* Adicionado para centralizar */
+  border-radius: 10px;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: rgb(206, 206, 206);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover:not(.dropdown:hover) {
+  background-color: #dad9d9;
+  color: black;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+main{
+  background-color: #cecbcb;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 50px;
+  margin-top: 20px;
+  border-radius: 40px 0px 40px;
+}
+main img { 
+  float: right;
+  padding: 30px;
+
+}
+
+main ul li {
+  padding: 10px;
+  text-align: justify;
+}
+
+main p{
+  padding: 5px;
+  text-align: justify;
+}
+
+footer{
+  margin-top: 20px;
+  padding: 50px;
+  font-size: 13px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+footer a{
+  padding: 20px;
+}
+
+footer p{
+  text-align: right;
+}
+
+video{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
